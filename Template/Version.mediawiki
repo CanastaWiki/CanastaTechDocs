@@ -1,0 +1,11 @@
+<noinclude>
+{{#template_params:Status|Manuals}}
+{{#cargo_declare:_table=Versions|Status=String (allowed values=Released,Unreleased,Closed)|Manuals=List (,) of String}}
+</noinclude><includeonly>{{#cargo_store:_table=Versions}}
+{{#template_display:_format=standard}}
+{{#mintydocs_version:
+|status={{{Status|}}}
+|manuals list={{{Manuals|}}}
+|}}
+[[Category:Versions]]
+</includeonly>
