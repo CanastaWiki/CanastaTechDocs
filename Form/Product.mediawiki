@@ -1,0 +1,28 @@
+<noinclude>
+This is the "Page" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Product|autocomplete on category=Products}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Product}}}
+{| class="formtable"
+!Display name
+|{{{field|Display name}}}
+|-
+!List of admins
+|{{{field|Admins|input type=tokens|values from namespace=User}}}
+|-
+!List of editors
+|{{{field|Editors|input type=tokens|values from namespace=User}}}
+|-
+!List of previewers
+|{{{field|Previewers|input type=tokens|values from namespace=User}}}
+|}
+{{{end template}}}
+
+'''Text:'''
+{{{standard input|free text|rows=10|editor=visualeditor}}}
+</includeonly>
