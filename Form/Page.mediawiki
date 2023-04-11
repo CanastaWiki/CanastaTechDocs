@@ -1,0 +1,27 @@
+<noinclude>
+This is the "Page" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Page|autocomplete on category=Pages}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Page}}}
+'''Display name for this page:''' (leave blank to set to page name)
+
+{{{field|Display name}}}
+
+
+'''Display name for this page within the table of contents:''' (leave blank to set to page name)
+
+{{{field|TOC name}}}
+
+
+{{{field|Inherit|label='''Inherit this page's text from the corresponding topic in a previous version of the product'''}}}
+{{{end template}}}
+
+
+'''Text:'''
+{{{standard input|free text|rows=10|editor=visualeditor}}}
+</includeonly>
