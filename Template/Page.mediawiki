@@ -1,0 +1,13 @@
+<noinclude>
+{{#template_params:Display name|TOC name|Inherit}}
+{{#cargo_declare:_table=Pages|Display_name=String|TOC_name=String|Inherit=Boolean}}
+</noinclude><includeonly>{{#cargo_store:_table=Pages}}
+{{#template_display:_format=standard}}
+[[Category:Pages]]
+{{#mintydocs_topic:
+|display name={{{Display name|}}}
+|toc name={{{TOC name|}}}
+|{{#ifeq:{{{Inherit|}}|Yes|inherit}}
+}}
+{{#default_form:Page}}
+</includeonly>
