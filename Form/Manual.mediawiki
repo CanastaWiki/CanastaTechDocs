@@ -1,0 +1,34 @@
+<noinclude>
+This is the "Manual" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Manual|autocomplete on category=Manuals}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Manual}}}
+'''Display name:'''
+{{{field|Display name}}}
+
+'''Specify list of topics on:'''
+{{{field|Use topics list page|input type=dropdown|values=this page,another page|mandatory|default=this page|show on select=this page=>list-of-topics;another page=>topics-page}}}
+
+<div id="list-of-topics" style="border: 1px solid #bbb; background-color: #f5f5f5; padding: 10px 20px;">
+'''List of topics in this manual:'''
+{{{field|Topics list|input type=mintydocs toc}}}
+</div><div id="topics-page" style="border: 1px solid #bbb; background-color: #f5f5f5; padding: 10px 20px;">
+'''Page that holds list of topics:'''
+{{{field|Topics list page}}}
+</div>
+
+{{{field|Pagination|label='''Enable pagination for this manual'''}}}
+
+{{{field|Inherit|label='''Inherit this manual's text from the corresponding manual in a previous product version'''}}}
+{{{end template}}}
+
+
+'''Text:'''
+{{{standard input|free text|rows=10|editor=visualeditor}}}
+
+</includeonly>
