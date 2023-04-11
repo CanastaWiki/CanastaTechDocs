@@ -1,0 +1,42 @@
+{
+	"publisher": "Canasta Project",
+	"author": "Yaron Koren",
+	"language": "en",
+	"licenseName": "CC-BY-SA 3.0",
+	"url": "https:\/\/github.com\/CanastaWiki\/CanastaPM",
+	"packages": {
+		"Canasta PM": {
+			"globalID": "wiki.canasta.techdocs",
+			"description": "A technical documentation package.",
+			"version": "0.1",
+			"directoryStructure": {
+				"service": "GitHub",
+				"accountName": "CanastaWiki",
+				"repositoryName": "Canasta Tech Docs",
+				"namespaceSettings": [
+					{
+						"namespace": "NS_TEMPLATE",
+						"fileNamePrefix": "Template/",
+						"fileNameSuffix": ".mediawiki"
+					},
+					{
+						"namespace": "NS_CATEGORY",
+						"fileNamePrefix": "Category/",
+						"fileNameSuffix": ".mediawiki"
+					},
+					{
+						"namespace": "PF_NS_FORM",
+						"fileNamePrefix": "Form/",
+						"fileNameSuffix": ".mediawiki"
+					}
+				]
+			},
+			"requiredExtensions": [
+				"Cargo",
+				"DisplayTitle",
+				"Page Forms",
+				"ParserFunctions"
+			]
+		}
+	}
+}
