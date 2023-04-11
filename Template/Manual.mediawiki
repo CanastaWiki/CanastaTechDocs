@@ -1,0 +1,19 @@
+<noinclude>
+{{#template_params:Display name
+|Topics list (label=List of topics in this manual)
+|Topics list page (label=Page that holds list of topics)
+|Pagination (label=Enable pagination for this manual)
+|Inherit}}
+{{#cargo_declare:_table=Manuals|Display_name=String|Topics_list=Text|Topics_list_page=Page|Pagination=Boolean|Inherit=Boolean}}
+</noinclude><includeonly>{{#cargo_store:_table=Manuals}}
+{{#mintydocs_manual:
+|display name={{{Display name|}}}
+|topics list={{{Topics list|}}}
+|topics list page={{{Topics list page|}}}
+|{{#ifeq:{{{Pagination|}}}|Yes|pagination}}
+|{{#ifeq:{{{Inherit|}}}|Yes|pagination}}
+|default form=Page
+}}
+[[Category:Manuals]]
+{{#default_form:Manual}}
+</includeonly>
