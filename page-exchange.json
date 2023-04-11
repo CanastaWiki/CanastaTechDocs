@@ -34,6 +34,7 @@
 			"requiredExtensions": [
 				"Cargo",
 				"DisplayTitle",
+				"MintyDocs",
 				"Page Forms",
 				"ParserFunctions"
 			]
