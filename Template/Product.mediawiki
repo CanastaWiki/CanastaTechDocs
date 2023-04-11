@@ -1,0 +1,19 @@
+<noinclude>
+{{#template_params:Display name|Admins|Editors|Previewers}}
+{{#cargo_declare:_table=Products
+|Display_name=String
+|Admins=List (,) of String
+|Editors=List (,) of String
+|Previewers=List (,) of String
+}}
+</noinclude><includeonly>{{#cargo_store:}}
+{{#template_display:_format=table}}
+{{#mintydocs_product:
+|display name={{{Display name|}}}
+|admins={{{Admins|}}}
+|editors={{{Editors|}}}
+|previewers={{{Previewers|}}}
+}}
+[[Category:Products]]
+{{#default_form:Product}}
+</includeonly>
