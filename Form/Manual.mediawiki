@@ -11,6 +11,15 @@ if a page with that name already exists, you will be sent to a form to edit that
 '''Display name:'''
 {{{field|Display name}}}
 
+'''Role:'''
+{{{field|Role}}}
+
+'''Level:'''
+{{{field|Level}}}
+
+'''Feature:'''
+{{{field|Feature|input type=combobox}}}
+
 '''Specify list of topics on:'''
 {{{field|Use topics list page|input type=dropdown|values=this page,another page|mandatory|default=this page|show on select=this page=>list-of-topics;another page=>topics-page}}}
 
