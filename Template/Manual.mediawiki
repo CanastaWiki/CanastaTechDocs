@@ -1,10 +1,13 @@
 <noinclude>
 {{#template_params:Display name
+|Role
+|Level
+|Feature
 |Topics list (label=List of topics in this manual)
 |Topics list page (label=Page that holds list of topics)
 |Pagination (label=Enable pagination for this manual)
 |Inherit}}
-{{#cargo_declare:_table=Manuals|Display_name=String|Topics_list=Text|Topics_list_page=Page|Pagination=Boolean|Inherit=Boolean}}
+{{#cargo_declare:_table=Manuals|Display_name=String|Role=String (allowed values=End users,Administrators,Developers)|Level=String (allowed values=Beginner,Intermediate,Advanced)|Feature=String|Topics_list=Text|Topics_list_page=Page|Pagination=Boolean|Inherit=Boolean}}
 </noinclude><includeonly>{{#cargo_store:_table=Manuals}}
 {{#mintydocs_manual:
 |display name={{{Display name|}}}
